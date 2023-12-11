@@ -2,12 +2,15 @@ import { app, BrowserWindow } from 'electron'
 import { join } from 'path'
 
 const createWindow = () => {
-  const win = new BrowserWindow({
+  const mainWindow = new BrowserWindow({
     width: 800,
-    height: 600
+    height: 600,
+    webPreferences: {
+      preload: join(__dirname, 'preload.js')
+    }
   })
 
-  win.loadFile(join(__dirname, '../index.html'))
+  mainWindow.loadFile(join(__dirname, '../index.html'))
 }
 
 app.whenReady().then(() => {
