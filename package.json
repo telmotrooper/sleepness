@@ -1,0 +1,14 @@
+{
+  "name": "sleepness",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "GPLV3",
+  "devDependencies": {
+    "electron": "^28.0.0"
+  }
+}
